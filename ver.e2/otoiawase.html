@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="Untitled-1.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.slidewide.js"></script>
+<script type="text/javascript">
+$(function($){
+    $('#slide').slidewide({
+        touch         : true,
+        touchDistance : '80',
+        autoSlide     : true,
+        repeat        : true,
+        interval      : 3000,
+        duration      : 500,
+        easing        : 'swing',
+        imgHoverStop  : true,
+        navHoverStop  : true,
+        prevPosition  : 0,
+        nextPosition  : 0,
+        filterNav     : true,
+        viewSlide     : 1,
+        baseWidth     : 940,
+        navImg        : false,
+        navImgCustom  : false,
+        navImgSuffix  : ''
+    });
+    $('.slidePrev img').rollover();
+    $('.slideNext img').rollover();
+    $(window).load(function() {
+         $('.topNaviCon').uniformHeight();
+    });
+});
+</script>
+<title>津田沼スペシャルエディション</title>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1><a href="index.html"><img src="images/top.jpg"  align="top" width="430" height="40"alt="ぶらり旅"  /></a></h1>
+        
+        <div id="menu">
+            <ul>
+                <li class="home active"><a href="index.html">ホーム</a></li>
+                <li><a href="sample.html">メニュー</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="otoiawase.html">お問い合わせ</a></li>
+            </ul>
+        </div><!-- /#menu -->
+    <div id="contents">
+       <div class="topNavi">
+            <div class="topNaviColumn">
+                <h2>遊び</h2>
+                <div class="topNaviCon">
+                    <div class="topNaviPhoto"><img src="images/ssss.jpg" alt="" width="277" height="57" /></div>
+                    <p>津田沼の遊び場所</p>
+                    <p class="topNaviDetail"><a href="asobi-1.html">詳しくはこちら</a></p>
+                </div><!-- /.topNaviCon -->
+            </div><!-- /.topNaviColumn -->
+            <div class="topNaviColumn">
+                <h2>ご飯</h2>
+                <div class="topNaviCon">
+                    <div class="topNaviPhoto"><img src="images/ss.jpg" alt=""width="277" height="57"  /></div>
+                    <p>津田沼のおいしいご飯</p>
+                    <p class="topNaviDetail"><a href="meshi-1.html">詳しくはこちら</a></p>
+                </div><!-- /.topNaviCon -->
+            </div><!-- /.topNaviColumn -->
+            <div class="topNaviColumn">
+                <h2>休憩</h2>
+                <div class="topNaviCon">
+                    <div class="topNaviPhoto"><img src="images/sss.jpg" alt="" width="277" height="57" /></div>
+                    <p>休憩しよう。</p>
+                    <p class="topNaviDetail"><a href="kyukei-1.html">詳しくはこちら</a></p>
+                </div><!-- /.topNaviCon -->
+            </div><!-- /.topNaviColumn -->
+        </div><!-- /.topNavi -->
+        <div id="conR">
+            <div class="information">
+                    <h3>お問い合わせ</h3>
+                    <ul>
+                        <p>こちらではホームページに関するお問い合わせを承っています。 </p>
+                        <p>下記の連絡先にご連絡ください。</p>
+                       <p>電話番号000-0000-0000</p>
+        
+                      <P>
+                            メールアドレス　s177777ku@s.chibakoudai.jp
+                      </P></ul>
+            </div><!-- /.information -->
+            
+        </div>
+        <div id="conL">
+             <div class="submenu">
+                <h3>メニュー</h3>
+                <h4><li><a href="asobi-1.html">遊ぶ</a></li></h4>
+                <ul>
+                    <li><a href="asobi-1.html#okugai">カラオケ</a></li>
+                    <li><a href="asobi-1.html#okunai">ゲームセンター、パチンコ</a></li>
+                </ul>
+                <h4><li><a href="meshi-1.html">ご飯</a></li></h4>
+                <ul>
+                    <li><a href="meshi-1.html#washoku">和食</a></li>
+                    <li><a href="meshi-1.html#youshoku">洋食</a></li>
+                    <li><a href="meshi-1.html#tyuuka">中華</a></li>
+                </ul>
+                <h4><li><a href="kyukei-1.html">休憩スポット</a></li></h4>
+                <ul>
+                    <li><a href="kyukei-1.html#yuuryou">有料休憩スポット</a></li>
+                    <li><a href="kyukei-1.html#muryou">無料休憩スポット</a></li>
+               </ul>
+            </div><!-- /.submenu -->
+           
+        </div>
+    </div><!-- /#contents -->
+    <div id="footMenu">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="sample.html">メニュー</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="otoiawase.html">お問い合わせ</a></li>
+        </ul>
+    </div><!-- /#footerMenu -->
+    <div id="footer">
+        <div class="copyright">下田研究室B班</div>
+    </div><!-- /#footer -->
+</div><!-- /#container -->
+<div id="pageTop">
+    <a href="#">Page Top</a>
+</div><!-- /#pageTop -->
+</body>
+</html>
